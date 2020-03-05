@@ -8,6 +8,7 @@ import Menu from "./menu"
 const Header = ({ siteTitle }) => (
   <header
     style={{
+      width: "100%",
       background: `#580D7D`,
       marginBottom: `1.45rem`,
       display: "flex",

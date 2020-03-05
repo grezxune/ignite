@@ -11,13 +11,7 @@ export default () => {
         padding: 12,
       }}
     >
-      © {new Date().getFullYear()}, Built by
-      <a
-        href="https://www.tommytreb.com"
-        style={{ marginLeft: 5, color: "white" }}
-      >
-        Tommy Treb
-      </a>
+      © {new Date().getFullYear()}, Stevens Point Ignite Young Professionals
     </footer>
   )
 }

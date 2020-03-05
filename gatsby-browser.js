@@ -1,7 +1,14 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+import React from "react"
+import { ThemeProvider } from "@material-ui/core"
+import { createMuiTheme } from "@material-ui/core/styles"
 
-// You can delete this file if you're not using it
+const theme = createMuiTheme({
+  palette: {
+    primary: { main: "#580D7D" },
+    secondary: { main: "#FFFFFF" },
+  },
+})
+
+export const wrapRootElement = ({ element }) => {
+  return <ThemeProvider theme={theme}>{element}</ThemeProvider>
+}

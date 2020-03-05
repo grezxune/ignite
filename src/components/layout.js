@@ -25,11 +25,18 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexFlow: "column nowrap",
+        justifyContent: "flex-start",
+        alignItems: "center",
+        minHeight: "100vh",
+      }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
@@ -37,7 +44,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
