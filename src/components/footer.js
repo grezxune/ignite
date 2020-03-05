@@ -18,7 +18,7 @@ export default () => {
       <span>
         © {new Date().getFullYear()}, Stevens Point Ignite Young Professionals
       </span>
-      <div>
+      <div style={{ display: "flex" }}>
         <IconButton
           href={"https://www.facebook.com/IgnitePortageCountyWI/"}
           color="secondary"
